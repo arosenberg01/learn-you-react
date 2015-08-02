@@ -9,7 +9,7 @@ app.set('views', __dirname + '/views');
 app.engine('jsx', reactViews.createEngine());
 
 app.use('/', function(req, res) {
-  res.render('index', '');
+  res.render('index-prototypes', '');
 });
 
 app.listen(app.get('port'), function() {});
